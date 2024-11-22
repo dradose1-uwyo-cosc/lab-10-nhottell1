@@ -1,9 +1,9 @@
-# Your Name Here
+# Nolan Hottell
 # UWYO COSC 1010
-# Submission Date
-# Lab XX
-# Lab Section: 
-# Sources, people worked with, help given to: 
+# 11/21/24
+# Lab 10
+# Lab Section: 13
+# Sources, people worked with, help given to: Bradley Ekstrom, Riley Green 
 # your
 # comments
 # here
@@ -17,6 +17,23 @@ def get_hash(to_hash):
     """You can use """
     return sha256(to_hash.encode('utf-8')).hexdigest().upper()
 
+try:
+    path = Path("rockyou.txt")
+    contents = path.read_text()
+    passwords = contents.splitlines()
+    hash = Path('hash')
+    hashedp = hash.read_text()
+except(FileNotFoundError):
+    print("File(s) not found")
+
+try:
+    for password in passwords:
+        temp_hash = get_hash(password)
+        if temp_hash == hashedp:
+            print(f'The password is {password}')
+
+except(NameError):
+    print("The above file(s) have not been found")
 
 
 # Files and Exceptions

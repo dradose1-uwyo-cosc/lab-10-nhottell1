@@ -1,8 +1,8 @@
-# [Name]
-## [Assignment #]
-## [Submission date: MM/DD/YY]
+# [Nolan Hottell]
+## [Assignment 10]
+## [Submission date: 11-21-24]
 ## Worked with/sources 
-* example
+* Debuged by AI
 * example
 * example
 * example
